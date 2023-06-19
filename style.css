@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Tilt Neon', cursive;
+}
+
+body{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 213, 255, 0.826);
+}
+
+.wraper{
+    width: 40vw;
+    border: 1px solid black;
+    background-color: lightcyan;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
+
+.wraper .header{
+    margin: 10px;
+    text-align: center;
+    font-size: larger;
+    font-weight: 400;
+    cursor: default;
+}
+
+.wraper .form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.wraper .form > input, button{
+    outline: none;
+    height: 30px;
+    margin: 5px;
+}
+
+.wraper .form input{
+    padding-left: 2px;
+    border-style: none;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.wraper .form > button{
+    background-color: rgb(31, 168, 222);
+    border-radius: 5px;
+    color:white;
+    cursor: pointer;
+}
+
+.wraper .form > button:hover{
+    background-color: rgb(28, 146, 192);
+}
+
+.wraper .image_section{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border:1px solid black;
+    border-radius: 5px;
+}
+
+.wraper .image_section img{
+    width: 20vw;
+}
+
+.wraper .image_section.active{
+    display: flex;
+}
